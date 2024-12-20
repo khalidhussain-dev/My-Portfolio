@@ -1,0 +1,453 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: #404040;
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding: 0 1rem;
+}
+
+.head_div {
+  height: 100%;
+  display: flex;
+  margin-left: auto; /* Moves the element to the right */
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+  margin-right: 2rem;
+}
+
+.header a {
+  height: 90%;
+  width: 7rem;
+  border-radius: 0.5rem;
+  /* border: 1px solid white; */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.header a:hover {
+  background-color: #909090;
+}
+
+.head_element {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid white; */
+  /* border-radius: 0.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 1rem; */
+  cursor: pointer;
+}
+
+/* Style for the active link */
+.nav-link.active .head_element {
+  border-bottom: 2px solid #ff9350;
+  color: #ff9350;
+}
+
+/* Main /////////////////////////////////////////////////////////////////////////////////////////*/
+
+main {
+  /* height: 100vh; */
+  width: 100%;
+  background-color: #808080;
+  color: white;
+  margin-top: 5rem;
+}
+
+/* Section Styles */
+.section {
+  /* height: 25rem; Full screen height for demo */
+  height: auto;
+  /* padding-top: 5rem; Add padding to account for fixed header */
+  padding-top: 1rem;
+  /* border: 2px solid red; */
+}
+
+#home {
+  color: white;
+  padding: 1rem;
+  border: none;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  cursor: default;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: 2px solid blue; */
+}
+
+.intro {
+  /* border: 2px solid green; */
+  max-width: 50%;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  /* color: #ff6b35; */
+  /* color: #ff6b35; */
+  color: white;
+}
+#intro_h1_portion {
+  color: #ff9350;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #404040;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button:hover {
+  background-color: #303030;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  /* background-color: lightgray; */
+  background-color: #ff9350;
+  /* background-color: #ff5733; */
+  /* color: black; */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  height: 1.5rem;
+  gap: 0.5rem; /* Space between icon and text */
+  margin-left: 5rem;
+}
+
+.download-button i {
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+.download-button:hover {
+  /* background-color: #303030; */
+  color: #b45b24;
+  background-color: white;
+}
+
+.image {
+  width: 24rem;
+  height: 26rem;
+  /* border-radius: 30%; */
+  border-radius: 50%;
+  /* border: #d1d1d1; */
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 30%; */
+  border-radius: 50%;
+  /* border: 2px solid #d1d1d1; */
+  border: 2px solid #ff9350;
+  background-color: #ff9350;
+  object-fit: cover; /* Adjust image to fit container */
+}
+
+#bio_data {
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.bio-content {
+  max-width: 1000px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  cursor: default;
+  margin-bottom: 2rem;
+}
+
+.bio-content h1,
+.bio-content h3 {
+  color: #ffa959;
+}
+.bio-content h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.bio-content h3 {
+  margin-top: 1rem;
+}
+
+.bio-content p,
+.bio-content ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.bio-content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.bio-content a {
+  color: white;
+  text-decoration: underline;
+}
+
+.bio-content a:hover {
+  /* color: #303030; */
+  color: rgb(255, 168, 47);
+}
+
+#skills {
+  /* background-color: #d1d1d1; */
+  /* color: #333; */
+  color: white;
+  padding: 0 1rem;
+  cursor: default;
+}
+
+.skills-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-content h2 {
+  font-size: 2.5rem;
+  color: #ffa959;
+  margin-bottom: 1rem;
+}
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.skills-category h3 {
+  color: #ffa959;
+}
+
+.skills-category ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.skills-category li {
+  font-size: 1rem;
+}
+
+#projects {
+  padding: 1rem;
+  color: #303030;
+}
+#projects h2 {
+  color: #ffa959;
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 3rem;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  background-color: #fff;
+  color: #303030;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card h3 {
+  margin-bottom: 1rem;
+  color: #ff9350;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#certifications {
+  color: white;
+  padding: 1rem;
+}
+
+.certifications-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  cursor: default;
+}
+
+.certifications-content h2 {
+  font-size: 2.5rem;
+  color: #ffa959;
+  margin-bottom: 1rem;
+}
+
+.certification {
+  margin-bottom: 2rem;
+}
+
+.certification h3 {
+  color: #ffa959;
+}
+
+.certification p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.certification p strong {
+  font-weight: bold;
+}
+
+/* Footer //////////////////////////////////////////////////////////////////////////////////////////// */
+footer {
+  background-color: #404040;
+  color: white;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+}
+
+/* Responsiveness  RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+/* Default styling for larger screens is already defined */
+
+@media (max-width: 800px) {
+  .image {
+    width: 20rem;
+    height: 22rem;
+    border-radius: 30%;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .head_div {
+    width: 85%; /* Full width on smaller screens */
+    margin-right: 1rem;
+  }
+
+  .header a {
+    font-size: 1rem; /* Slightly smaller font size for smaller screens */
+  }
+
+  /* Section height adjustments for smaller screens */
+  .section {
+    height: auto; /* Allow section height to adjust based on content */
+  }
+  .intro {
+    max-width: 100%;
+  }
+  .download-button {
+    margin: 0 0 1rem;
+    float: right;
+  }
+  .image {
+    width: 16rem;
+    height: 18rem;
+    border-radius: 30%;
+    margin: auto;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%;
+    max-width: 330px;
+  }
+
+  footer {
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .head_div {
+    width: 95%; /* Full width on smaller screens */
+    margin-right: 0.7rem;
+    margin-left: 0;
+  }
+
+  .header a {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    width: 4.5rem;
+  }
+  footer {
+    font-size: 0.9rem; /* Footer font size for extra small screens */
+    height: 2.2rem;
+  }
+}
+@media (max-width: 360px) {
+  .header {
+    padding: 0;
+  }
+  .head_div {
+    width: 100%; /* Full width on smaller screens */
+    margin-right: 0;
+  }
+
+  .header a {
+    font-size: 0.7rem; /* Slightly smaller font size */
+    width: 4rem;
+  }
+  footer {
+    height: 2rem;
+    font-size: 0.7rem; /* Footer font size for extra small screens */
+  }
+}
